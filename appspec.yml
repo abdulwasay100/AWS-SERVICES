@@ -1,0 +1,23 @@
+version: 0.0
+
+os: linux
+
+files:
+  - source: /
+    destination: /home/ubuntu/simple_node-for-deployment_purpose
+
+hooks:
+  BeforeInstall:
+    - location: scripts/stop_application.sh
+      timeout: 300
+      runas: ubuntu
+
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ubuntu
+
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: ubuntu
