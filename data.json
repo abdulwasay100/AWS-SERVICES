@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1784227359540,
+      "title": "simple node js application",
+      "body": "this is the body for the post\r\n11:42\r\nwhich will be saved to data.json",
+      "date": "2026-07-16"
+    },
+    {
+      "id": 1784226742767,
+      "title": "hi",
+      "body": "bye",
+      "date": "2026-07-16"
+    },
+    {
+      "id": 1784226709573,
+      "title": "Test Post",
+      "body": "Hello from test",
+      "date": "2026-07-16"
+    },
+    {
+      "id": 1,
+      "title": "Welcome to My Blog",
+      "body": "Auto deploymenmt only!",
+      "date": "2026-07-16"
+    }
+  ]
+}
