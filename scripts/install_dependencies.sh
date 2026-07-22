@@ -1,4 +1,5 @@
 #!/bin/bash
 
-cd /home/ubuntu/simple_node-for-deployment_purpose
+cd /home/ubuntu/AWS-SERVICES
+
 npm install

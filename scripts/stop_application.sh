@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pm2 stop simple-blog || true
+pm2 stop simple || true

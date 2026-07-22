@@ -4,7 +4,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/simple_node-for-deployment_purpose
+    destination: /home/ubuntu/AWS-SERVICES
 
 hooks:
   BeforeInstall:
