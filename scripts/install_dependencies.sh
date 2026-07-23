@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cd /home/ubuntu/AWS-SERVICES
-
-npm install
+# Direct npm install chalaein
+npm install --production
