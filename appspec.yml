@@ -8,12 +8,12 @@ hooks:
   BeforeInstall:
     - location: scripts/stop_application.sh
       timeout: 300
-      runas: ubuntu # Isko ubuntu hi rehne dein
+      runas: ubuntu
   AfterInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
-      runas: ubuntu # Isko bhi ubuntu kar dein
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/start_application.sh
       timeout: 300
-      runas: ubuntu # Isko bhi ubuntu rehne dein
+      runas: ubuntu

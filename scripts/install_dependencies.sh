@@ -1,10 +1,13 @@
 #!/bin/bash
 cd /home/ubuntu/AWS-SERVICES
 
-# NVM aur Node path ko force load karne ke liye yeh 3 lines sabse zaroori hain
+# Explicitly load NVM environment variables for the ubuntu user
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Ab npm bina kisi error ke chalega
+# Fallback path inclusion in case node was installed via apt or binary pack
+export PATH=$PATH:/usr/bin:/usr/local/bin
+
+# Run installation smoothly
 npm install --production
