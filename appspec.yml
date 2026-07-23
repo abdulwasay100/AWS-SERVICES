@@ -1,25 +1,19 @@
 version: 0.0
-
 os: linux
-
 files:
   - source: /
     destination: /home/ubuntu/AWS-SERVICES
     overwrite: true
-
-
 hooks:
   BeforeInstall:
     - location: scripts/stop_application.sh
       timeout: 300
-      runas: root
-
+      runas: ubuntu # Isko ubuntu hi rehne dein
   AfterInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
-      runas: root
-
+      runas: ubuntu # Isko bhi ubuntu kar dein
   ApplicationStart:
     - location: scripts/start_application.sh
       timeout: 300
-      runas: root
+      runas: ubuntu # Isko bhi ubuntu rehne dein
